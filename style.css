@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* -------------------------- Global------------------------- */
+
+:root {
+   /* fonts */
+   --font-roboto: "Roboto", sans-serif;
+   --font-poppins: "Poppins", sans-serif;
+
+   /* colors */
+   --color-white: #fff;
+   --color-ice: #f7f7f7;
+
+   --color-gradient-1: 135deg, #81ffef 0%, #f067b4 100%;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   max-width: 1512px;
+   margin: 0 auto;
+   background-color: #1e1e1e;
+   font-family: var(--font-roboto);
+}
+
+a {
+   text-decoration: none;
+}
+
+li {
+   list-style-type: none;
+}
+
+img {
+   max-width: 100%;
+   display: block;
+}
+
+/* ------------------------- /Global------------------------- */
+
+/* -------------------------- Header------------------------- */
+.bg-header {
+   background: url(./imgs/Background.jpg) right no-repeat;
+   background-size: cover;
+   border-bottom: 85px solid var(--color-white);
+}
+
+.nav {
+   display: flex;
+   justify-content: end;
+   padding-top: 25px;
+}
+
+.nav__links {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 5px;
+   margin-right: 10%;
+}
+
+.nav__links a {
+   color: var(--color-ice);
+   font-family: var(--font-poppins);
+   padding: 10px;
+}
+
+.banner {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.banner__text {
+   padding-left: 120px;
+}
+
+.banner__text > h1 {
+   font-family: var(--font-poppins);
+   font-weight: 600;
+   font-size: 64px;
+   line-height: 76px;
+   text-transform: uppercase;
+   background-clip: inherit;
+   background: -webkit-linear-gradient(var(--color-gradient-1));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   margin-top: 60px;
+   margin-bottom: 30px;
+}
+
+.banner__text > p {
+   font-size: 28px;
+   line-height: 38px;
+   color: var(--color-white);
+}
+
+.banner__img {
+   position: relative;
+   bottom: -85px;
+}
+
+/* ------------------------- /Header------------------------- */
