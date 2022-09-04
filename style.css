@@ -11,8 +11,11 @@
    /* colors */
    --color-white: #fff;
    --color-ice: #f7f7f7;
+   --color-black: #131414;
+   --color-soft-black: #3a3b3b;
 
    --color-gradient-1: 135deg, #81ffef 0%, #f067b4 100%;
+   --color-gradient-2: 330deg, rgba(41, 98, 242, 1) 0%, rgba(200, 44, 255, 1) 50%, rgba(254, 137, 2, 1) 65%;
 }
 
 * {
@@ -46,7 +49,7 @@ img {
 .bg-header {
    background: url(./imgs/Background.jpg) right no-repeat;
    background-size: cover;
-   border-bottom: 85px solid var(--color-white);
+   border-bottom: 100px solid var(--color-white);
 }
 
 .nav {
@@ -70,7 +73,7 @@ img {
 
 .banner {
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1.1fr 1fr;
 }
 
 .banner__text {
@@ -87,7 +90,7 @@ img {
    background: -webkit-linear-gradient(var(--color-gradient-1));
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
-   margin-top: 60px;
+   margin-top: 90px;
    margin-bottom: 30px;
 }
 
@@ -103,3 +106,47 @@ img {
 }
 
 /* ------------------------- /Header------------------------- */
+
+/* ------------------------ Counters ------------------------ */
+
+.counters {
+   background-color: var(--color-white);
+}
+
+.counters__box {
+   display: flex;
+   justify-content: center;
+   gap: 80px;
+}
+
+.counters__box__item {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+
+.counters__box__item__number {
+   font-size: 64px;
+}
+
+.counters__box__item__text {
+   font-size: 32px;
+   margin-bottom: 50px;
+}
+
+.counters__shop-btn {
+   display: flex;
+   justify-content: center;
+}
+
+.counters__shop-btn > a {
+   font-family: var(--font-poppins);
+   color: var(--color-white);
+   font-size: 18px;
+   padding: 15px 30px;
+   background: linear-gradient(var(--color-gradient-2));
+   border-radius: 50px;
+   margin-bottom: 50px;
+}
+
+/* ----------------------- /Counters ------------------------ */
