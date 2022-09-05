@@ -11,6 +11,7 @@
    /* colors */
    --color-white: #fff;
    --color-ice: #f7f7f7;
+   --color-gray: #e6e6e6;
    --color-black: #131414;
    --color-soft-black: #3a3b3b;
 
@@ -43,13 +44,19 @@ img {
    display: block;
 }
 
+.container {
+   padding-left: 120px;
+   padding-right: 120px;
+   background-color: var(--color-gray);
+}
+
 /* ------------------------- /Global------------------------- */
 
 /* -------------------------- Header------------------------- */
 .bg-header {
    background: url(./imgs/Background.jpg) right no-repeat;
    background-size: cover;
-   border-bottom: 100px solid var(--color-white);
+   border-bottom: 100px solid var(--color-gray);
 }
 
 .nav {
@@ -73,7 +80,7 @@ img {
 
 .banner {
    display: grid;
-   grid-template-columns: 1.1fr 1fr;
+   grid-template-columns: 1fr 1fr;
 }
 
 .banner__text {
@@ -110,7 +117,7 @@ img {
 /* ------------------------ Counters ------------------------ */
 
 .counters {
-   background-color: var(--color-white);
+   background-color: var(--color-gray);
 }
 
 .counters__box {
@@ -122,14 +129,20 @@ img {
 .counters__box__item {
    display: flex;
    flex-direction: column;
+   gap: 20px;
    text-align: center;
 }
 
 .counters__box__item__number {
+   color: var(--color-black);
+   font-weight: 600;
    font-size: 64px;
 }
 
 .counters__box__item__text {
+   font-family: var(--font-poppins);
+   font-weight: 600;
+   color: var(--color-soft-black);
    font-size: 32px;
    margin-bottom: 50px;
 }
