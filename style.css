@@ -301,4 +301,12 @@ img {
       margin-bottom: 50px;
    }
 }
+@media (max-width: 600px) {
+   .banner__text > p {
+      display: none;
+   }
+   .banner {
+      grid-template-columns: 1fr;
+   }
+}
 /* ------------------------ /Media Query ------------------------ */
